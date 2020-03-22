@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title> Log-in</title>
+	<meta  content="width=device-width,initial-state=1">
+	<link href="css/bootstrap.css" rel="stylesheet"/>
+	<script src="js/jquery-3.4.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<style type="text/css">
+		.bg{
+			background:url('images/330563.jpg') no-repeat;
+			width: 100%;
+			height: 100%;
+		}
+		#log{
+			padding:80px 40px;
+			margin-top: 80px;
+			-webkit-box-shadow: -7px -8px 19px 16px rgba(0,0,0,0.75);
+-moz-box-shadow: -7px -8px 19px 16px rgba(0,0,0,0.75);
+box-shadow: -7px -8px 19px 16px rgba(0,0,0,0.75);
+		}
+		.img{
+			width: 150px;
+			height: 150px;
+			margin: auto;
+
+		}
+		h1{
+			color:black;
+			text-align:center;
+			font-weight:bolder;
+			margin-top:-20px;
+
+		}
+	lable{font-size:20px;color:black;
+	font-weight:bolder;}
+	button{
+	-webkit-box-shadow: -12px -8px 16px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: -12px -8px 16px 1px rgba(0,0,0,0.75);
+box-shadow: -12px -8px 16px 1px rgba(0,0,0,0.75);
+	}
+	</style>
+</head>
+<body background="images/log.jpg">
+	<div class="container-fluid bg">
+		<div class="row">
+			 <div class="col-md-4 col-sm-4 col-xs-12"></div>
+			 <div class="col-md-4 col-sm-4 col-xs-12">
+			 	<form id="log">
+			 		<h1>Login Form</h1>
+			 		<img class="img img-responsive img-circle" src="images/giphy.gif" >
+	  <div class="form-group">
+	  <lable>Email</lable>
+	    <input type="Email" class="form-control" placeholder="Email">
+	  </div>
+	  <div class="form-group">
+	  <lable>Password</lable>
+	    <input type="password" class="form-control" placeholder="password">
+	  </div>
+	  <div class="checkbox">
+	    <label><input type="checkbox">Remember me</label>
+	  </div>
+	  <button type="Submit" class="btn btn-success btn-block">Login</button>
+	</form>
+			 </div>
+			 <div class="col-md-4 col-sm-4 col-xs-12"></div>			 
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<html>
+<head>
+	<title>WebSite</title>
+	<meta  content="width=device-width,initial-state=1">
+	<link href="css/bootstrap.css" rel="stylesheet"/>
+	<script src="js/jquery-3.4.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	
+	<style> 
+	#im:hover{
+	
+	transition:linear all 0.3s;
+	transform:scale(1.1,1.1);
+	opacity:0.7;
+	}
+	
+
+	
+	</style>
+</head>
+<body>
+	<!--navigation bar-->
+	<nav class="navbar navbar-inverse" style="border-radius: 0px">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand"> Weather Forecasting  <span class="glyphicon glyphicon-globe"></span></a>
+				<button class="navbar-toggle" data-target="#n" data-toggle="collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				 </button>
+			</div>
+			<div id="n" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav"><li><a href="#">Home<span class="glyphicon glyphicon-home"></a></li>
+				
+				 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Live Report<span class="glyphicon glyphicon-phone"><span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.accuweather.com/en/in/indore/204411/weather-forecast/204411">Indore</a></li>
+						<li><a href="https://www.accuweather.com/en/in/delhi/202396/current-weather/202396">Delhi</a></li>
+						<li><a href="https://www.accuweather.com/en/in/bhopal/204408/current-weather/204408">Bhopal</a></li>
+					</ul>
+				</li>
+				<li><a href="https://www.weather-forecast.com/locations/Indore/forecasts/latest">About us</a></li>
+			</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="C:/Users/HP/Desktop/Project/Bootstrap/login.html">Login<span class="glyphicon glyphicon-log-in"></span></a></li>
+					<li><a href="C:/Users/HP/Desktop/Project/Bootstrap/signup.html">Sign up<span class="glyphicon glyphicon-user"></span></a></li>
+			</ul>
+			</div>
+	</div>
+</nav>
+	<!--ends-->
+	<!--carousel-->
+	<div class="carousel slide" data-ride="carousel" data-interval="3000" id="slide" style="margin-top: -20px">
+		<div class="carousel-inner">
+			<ol class="carousel-indicators"><li class="active "data-target="#slide" data-slide-to="0"></li>
+			<li data-target="#slide" data-slide-to="1"></li>
+			<li data-target="#slide" data-slide-to="2"></li>
+		</ol>
+			<div class="item active">
+				<img src="images/v5.jfif" class="img-responsive" style="width: 100%">
+			</div>
+			<div class="item">
+				<img src="images/v8.jfif" style="width: 100%">
+			</div>
+			<div class="item">
+				<img src="images/v2.jfif" style="width: 100%">
+			</div>
+			<a href="#slide" class="carousel-control left" data-slide="prev"><span class="icon-prev"></span></a>
+			<a href="#slide" class="carousel-control right" data-slide="next"><span class="icon-next"></span></a>
+		</div>
+
+	</div>
+	<!--ends-->
+	
+<br>
+<div class="container-fluid">
+<div class="well">
+<h3><span class="glyphicon glyphicon-cloud"></span><span style="color:blue;">Weather</span> THE UPDATES ARE HERE...</h3>
+</div>
+
+<div class="jumbotron">
+	<div class="row">
+		<div class="col-md-4">
+		
+		<img src="images/v4.jfif" class="img-responsive" width="400px" height="300px" id="im"/>
+		
+		</div>
+		<div class="col-md-4">
+			
+			<p style="color:red; font-size:15px">The current weather report of our lab by using the DTH11 hardware devices to check real life application interface.
+			
+		</p>
+		
+		
+		</div>
+	</div>
+</div>
+	<!--<div class="row">
+		<div class="col-md-7">
+		<center>
+			<img src="images/c2.jfif" class="img-responsive" height="300px" width="600px" id="im"/>
+		</center>
+		</div>
+		<div class="col-md-5">
+			<div class="panel-group" id="p">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><h4 data-toggle="collapse" data-parent="#p" data-target="#p1">Panel 1</h4></div>
+				<div class="collapse collapse-panel collaps in" id="p1">
+					<div class="panel-body">
+					LOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
+		which is propebly has no meaning of itself but r
+					</div>	
+					</div>
+
+				</div>
+				
+				<div class="panel panel-danger">
+					<div class="panel-heading"><h4 data-toggle="collapse" data-parent="#p"  data-target="#p2">Panel 2</h4></div>
+					<div class="collapse collapse-panel" id="p2">
+					<div class="panel-body">
+					LOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
+		which is propebly has no meaning of itself but r
+					</div>
+					</div>					
+
+				</div>
+				<div class="panel panel-success">
+					<div class="panel-heading"><h4 data-toggle="collapse" data-parent="#p"  data-target="#p3">Panel 3</h4></div>
+					<div class="collapse collapse-panel" id="p3">
+					<div class="panel-body">
+					LOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
+		which is propebly has no meaning of itself but r
+					</div>	
+					</div>
+
+				</div>
+			</div>
+		
+		</div>
+	</div>-->
+<div class="row">
+	<div class="col-md-4">
+	<div class="panel panel-success">
+					<div class="panel-heading"><h4>Indore</h4></div>
+	
+					<div class="panel-body">
+					<img src="images/indore.jfif" class="img-responsive" width="500px" height="300px"/>
+					LOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
+		which is propebly has no meaning of itself but rLOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
+		which is propebly has no meaning of itself but rLOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
+		which is propebly has no meaning of itself but r
+					</div>	
+					</div>
+
+				</div>
+		<div class="col-md-4">
+		<div class="panel panel-danger">
+					<div class="panel-heading"><h4>Delhi</h4></div>
+	
+					<div class="panel-body">
+					<img src="images/delhi.jfif" class="img-responsive" width="500px" height="300px"/>
+					LOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
+		which is propebly has no meaning of itself but rLOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
+		which is propebly has no meaning of itself but rLOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
+		which is propebly has no meaning of itself but r
+					</div>	
+					</div>
+		</div>
+	<div class="col-md-4">
+	<div class="panel panel-primary">
+					<div class="panel-heading"><h4>Bhopal</h4></div>
+	
+					<div class="panel-body">
+					<img src="images/bhopal2.jfif" class="img-responsive" width="500px" height="600px"/>
+					LOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
+		which is propebly has no meaning of itself but rLOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
+		which is propebly has no meaning of itself but rLOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
+		which is propebly has no meaning of itself but r
+					</div>	
+					</div>
+	</div>
+</div>
+	
+	
+</div>
+<div class="navbar navbar-inverse">
+	<center>
+	<p style="color:white;font-size:15px">Copyright 2017 : WebCode </p>
+	</center>
+</div>
+
+
+</body>
+</html>
