@@ -1,0 +1,38 @@
+<html>
+<head>
+	<meta  content="width=device-width,initial-state=1">
+	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		 
+</head>
+<body>
+<table class="table table-hover">
+{% for index,row in data.items() %}
+	
+	<tr id="test_element">
+
+	{% for colname,val in row.items() %}
+		
+			<td>{{ val }}</td>
+		
+	{% endfor %}
+
+	<td><button id="validate" onclick="result_calc('{{ index }}')">Validate</button></td>
+	</tr>
+
+{% endfor %}
+</table>
+<script >
+	function result_calc(i){
+		//alert(index);
+			//$("#validate").parentsUntil("tr").addClass("bg-primary");
+			$(document).ready(function(){
+		    $("#result").load("{{ url_for('result') }}",{ 'index':i });
+		    });
+	}
+</script>
+</body>
+</html>

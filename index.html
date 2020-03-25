@@ -1,31 +1,34 @@
 <html>
 <head>
 	<title>WebSite</title>
+	<!--
 	<meta  content="width=device-width,initial-state=1">
-	
+	<link href="css/bootstrap.css" rel="stylesheet"/>
+	<script src="js/jquery-3.4.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	-->
+	<meta  content="width=device-width,initial-state=1">
+	<!--
+	<link rel="stylesheet"  href = "{{ url_for('static', filename='bootstrap.css') }}">
+	<script src="{{ url_for('static', filename='js/jquery-3.4.0.min.js') }}"></script> 
+	<script src="{{ url_for('static', filename='bootstrap.js') }}"></script>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	-->
 	 <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
-	<script>
-		$(document).ready(function(){
-		    $("#test_data").load("{{ url_for('test_data') }}");
-		});
-		$(document).ready(function(){
-		    $("#columns").load("{{ url_for('columns') }}");
-		});
-	</script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
 </head>
 <body>
 	<!--navigation bar-->
 	<nav class="navbar navbar-inverse" style="border-radius: 0px">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="#" class="navbar-brand"> Weather Forecasting  <span class="glyphicon glyphicon-globe"></span></a>
+				<a href="#" class="navbar-brand"> Webcode <span class="glyphicon glyphicon-globe"></span></a>
 				<button class="navbar-toggle" data-target="#n" data-toggle="collapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -34,15 +37,15 @@
 			</div>
 			<div id="n" class="collapse navbar-collapse">
 			<ul class="nav navbar-nav"><li><a href="#">Home<span class="glyphicon glyphicon-home"></a></li>
-				
-				 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Live Report<span class="glyphicon glyphicon-phone"><span class="caret"></span></a>
+				<li><a href="#">Softwar</a></li>
+				 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Mobile<span class="glyphicon glyphicon-phone"><span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="https://www.accuweather.com/en/in/indore/204411/weather-forecast/204411">Indore</a></li>
-						<li><a href="https://www.accuweather.com/en/in/delhi/202396/current-weather/202396">Delhi</a></li>
-						<li><a href="https://www.accuweather.com/en/in/bhopal/204408/current-weather/204408">Bhopal</a></li>
+						<li><a href="#">Samsung</a></li>
+						<li><a href="#">Oppo</a></li>
+						<li><a href="#">Iphone</a></li>
 					</ul>
 				</li>
-				<li><a href="https://www.weather-forecast.com/locations/Indore/forecasts/latest">About us</a></li>
+				<li><a href="#">About us</a></li>
 			</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="C:/Users/HP/Desktop/Project/Bootstrap/login.html">Login<span class="glyphicon glyphicon-log-in"></span></a></li>
@@ -60,13 +63,13 @@
 			<li data-target="#slide" data-slide-to="2"></li>
 		</ol>
 			<div class="item active">
-				<img src="{{ url_for('static', filename='images/v5.jfif') }}" class="img-responsive" style="width: 100%">
+				<img src="{{ url_for('static', filename='images/0.jpg') }}" class="img-responsive" style="width: 100%">
 			</div>
 			<div class="item">
-				<img src="{{ url_for('static', filename='images/v8.jfif') }}" style="width: 100%">
+				<img src="{{ url_for('static', filename='images/1.jpg') }}" style="width: 100%">
 			</div>
 			<div class="item">
-				<img src="{{ url_for('static', filename='images/v2.jfif') }}" style="width: 100%">
+				<img src="{{ url_for('static', filename='images/2.jpg') }}" style="width: 100%">
 			</div>
 			<a href="#slide" class="carousel-control left" data-slide="prev"><span class="icon-prev"></span></a>
 			<a href="#slide" class="carousel-control right" data-slide="next"><span class="icon-next"></span></a>
@@ -78,35 +81,33 @@
 <br>
 <div class="container-fluid">
 <div class="well">
-<h3><span class="glyphicon glyphicon-cloud"></span><span style="color:blue;">Weather</span> THE UPDATES ARE HERE...</h3>
+<h3><span class="glyphicon glyphicon-globe"></span><span style="color:blue;">WebCode</span> New way to learn website designing</h3>
 </div>
 
 <div class="jumbotron">
 	<div class="row">
-		<div class="col-md-4">
-		
-		<img src="{{ url_for('static', filename='images/v4.jfif') }}" class="img-responsive" width="400px" height="300px" id="im"/>
-		
+		<div class="col-md-8">
+		<p style="color:red; font-size:15px">LOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
+		which is propebly has no meaning of itself but rather then considering it as a simple text just thing about it once
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+		dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+		It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It 
+		was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+		publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
 		</div>
 		<div class="col-md-4">
-			
-			<p style="color:red; font-size:15px">The current weather report of our lab by using the DTH11 hardware devices to check real life application interface.
-			
-		</p>
-		
+			<img src="{{ url_for('static', filename='images/c1.jfif') }}" class="img-responsive" width="300px" height="300px" id="im"/>
 		
 		</div>
 	</div>
 </div>
-<!-- New Jumbotron added -->
-<h1>Machine Learning Estimation</h1>
-<div class="jumbotron">
-<div id="columns"></div>
-<div style="overflow: scroll;height: 300px;" id="test_data"></div>
-<div id="result"></div>
-</div>
-
-	<!--
+	<div class="row">
+		<div class="col-md-7">
+		<center>
+			<img src="{{ url_for('static', filename='images/c2.jfif') }}" class="img-responsive" height="300px" width="600px" id="im"/>
+		</center>
+		</div>
 		<div class="col-md-5">
 			<div class="panel-group" id="p">
 				<div class="panel panel-primary">
@@ -144,14 +145,13 @@
 		
 		</div>
 	</div>
--->
 <div class="row">
 	<div class="col-md-4">
 	<div class="panel panel-success">
-					<div class="panel-heading"><h4>Indore</h4></div>
+					<div class="panel-heading"><h4>WebCode 1</h4></div>
 	
 					<div class="panel-body">
-					<img src="{{ url_for('static', filename='images/indore.jfif') }}" class="img-responsive" width="500px" height="300px"/>
+					<img src="{{ url_for('static', filename='images/images (3).jfif') }}" class="img-responsive"/>
 					LOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
 		which is propebly has no meaning of itself but rLOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
 		which is propebly has no meaning of itself but rLOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
@@ -162,10 +162,11 @@
 				</div>
 		<div class="col-md-4">
 		<div class="panel panel-danger">
-					<div class="panel-heading"><h4>Delhi</h4></div>
+					<div class="panel-heading"><h4>WebCode 2</h4></div>
 	
 					<div class="panel-body">
-					<img src="{{ url_for('static', filename='images/delhi.jfif') }}" class="img-responsive" width="500px" height="300px"/>
+						
+					<img src="{{ url_for('static', filename='images/images (4).jfif') }}" class="img-responsive"/>
 					LOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
 		which is propebly has no meaning of itself but rLOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
 		which is propebly has no meaning of itself but rLOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
@@ -175,10 +176,10 @@
 		</div>
 	<div class="col-md-4">
 	<div class="panel panel-primary">
-					<div class="panel-heading"><h4>Bhopal</h4></div>
+					<div class="panel-heading"><h4>WebCode 3</h4></div>
 	
 					<div class="panel-body">
-					<img src="{{ url_for('static', filename='images/bhopal2.jfif') }}" class="img-responsive" width="500px" height="600px"/>
+					<img src="{{ url_for('static', filename='images/Technical.png') }}" class="img-responsive"/>
 					LOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
 		which is propebly has no meaning of itself but rLOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
 		which is propebly has no meaning of itself but rLOREM IPSUm It is a simple dummy text which is written to a purpose of occuping the space of that container
